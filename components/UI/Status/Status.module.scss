@@ -1,0 +1,20 @@
+.status {
+  border-radius: 100px;
+  padding: 6px 10px;
+
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.easy {
+  color: var(--green);
+  background: rgba(136, 204, 20, 0.3);
+}
+.medium {
+  color: var(--orange);
+  background: rgba(255, 175, 0, 0.3);
+}
+.hard {
+  color: var(--red);
+  background: rgba(255, 62, 62, 0.3);
+}

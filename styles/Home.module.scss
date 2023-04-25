@@ -1,0 +1,68 @@
+.homeGrid {
+  color: #fff;
+  display: grid;
+  gap: 26px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto minmax(318px, auto) 1fr;
+
+  grid-template-areas:
+    "progress news news"
+    "teams teams complete"
+    "top10 top10 complete "
+    "top50 top50 complete";
+
+  @media screen and (max-width: 1450px) {
+    grid-template-rows: 0.5fr 0.5fr 1fr 1fr;
+
+    grid-template-areas:
+      "progress progress progress"
+      "news news news"
+      "teams teams teams"
+      "top10 top10 top10"
+      "top50 top50 top50"
+      "complete complete complete";
+  }
+
+  @media screen and (max-width: 450px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+
+    grid-template-areas:
+      "progress"
+      "complete"
+      "teams"
+      "news"
+      "top10"
+      "top50";
+  }
+
+  .progress {
+    grid-area: progress;
+  }
+  .news {
+    grid-area: news;
+  }
+  .teams {
+    grid-area: teams;
+  }
+  .top10 {
+    grid-area: top10;
+  }
+  .top50 {
+    grid-area: top50;
+  }
+  .complete {
+    grid-area: complete;
+  }
+  .noComplete {
+    max-height: 318px;
+  }
+
+  .accent_organisation p {
+    text-align: center;
+    color: var(--green);
+  }
+  .accent_organisation p a:hover {
+    color: #8fd700;
+  }
+}

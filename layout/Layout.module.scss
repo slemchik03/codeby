@@ -1,0 +1,36 @@
+.layout {
+  display: grid;
+  min-height: 100vh;
+  max-height: 100vh;
+  height: 100%;
+
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 90px 1fr;
+  grid-template-areas:
+    'sidebar header'
+    'sidebar main';
+}
+
+.header {
+  grid-area: header;
+}
+
+.sidebar {
+  grid-area: sidebar;
+
+  @media screen and (max-width: 720px) {
+    display: none;
+  }
+}
+
+.main {
+  grid-area: main;
+  background: var(--background-secondary);
+  overflow-y: scroll;
+
+  padding: 10px 29px;
+
+  @media screen and (max-width: 1060px) {
+    padding: 10px 14px;
+  }
+}

@@ -1,0 +1,25 @@
+.rules {
+    display: grid;
+    padding: 50px 0;
+    min-height: 100vh;
+    justify-content: center;
+    grid-template-columns: 850px;
+    background-color: #1a1c22;
+    &Title {
+        padding-bottom: 10px;
+        text-align: center;
+        font-weight: bold;
+    }
+    &List {
+        padding: 10px;
+    }
+    li {
+        font-weight: bold;
+        list-style: none;
+    }
+    .btn {
+        padding-top: 40px;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}

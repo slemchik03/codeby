@@ -1,0 +1,17 @@
+.buttons {
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .deleteUserWrapper {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: minmax(0, 400px);
+  }
+  .deleteUserInputWrapper {
+    margin-bottom: 20px;
+    display: grid;
+    justify-content: center;
+  }

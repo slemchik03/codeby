@@ -1,0 +1,46 @@
+.notFound {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  img {
+    width: 900px;
+    height: 310px;
+
+    @media screen and (max-width: 1366px) {
+      width: 70%;
+      height: 40%;
+    }
+
+    @media screen and (max-width: 770px) {
+      width: 90%;
+      height: 140px;
+    }
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 61px;
+    margin-top: -230px;
+    text-align: center;
+
+    @media screen and (max-width: 1366px) {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 120%;
+    }
+
+    @media screen and (max-width: 770px) {
+      margin-top: -120px;
+    }
+  }
+
+  .button {
+    width: 262px;
+    height: 47px;
+  }
+}

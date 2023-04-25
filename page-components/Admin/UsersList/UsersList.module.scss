@@ -1,0 +1,42 @@
+.usersList {
+  width: 100%;
+
+  .top {
+    padding: 11px 5px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 30px;
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .list {
+    .item {
+      padding: 11px 10px;
+      height: 40px;
+      display: grid;
+      align-items: center;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 30px;
+
+      gap: 4px;
+
+      span {
+        font-weight: 400;
+        font-size: 14px;
+      }
+
+      svg {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .oddUser {
+    border-radius: 3px;
+    background-color: var(--background-secondary);
+  }
+
+  .pagination {
+    margin-top: 26px;
+  }
+}

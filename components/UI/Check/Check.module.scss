@@ -1,0 +1,21 @@
+.check {
+  background-color: var(--background-secondary);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .icon {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    stroke: #455c2b;
+  }
+
+  .checked {
+    stroke: #88cc14;
+  }
+}

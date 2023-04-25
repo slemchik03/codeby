@@ -1,0 +1,71 @@
+.addNews {
+  border-radius: 14px;
+  background-color: var(--background);
+  padding: 20px;
+  margin: 16px 0;
+  width: 100%;
+
+  .inputs {
+    width: 100%;
+    margin: 24px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+
+    .title {
+      width: 100%;
+      input {
+        width: 50%;
+        @media screen and (max-width: 720px) {
+          width: 100%;
+        }
+      }
+    }
+    .desc {
+      width: 100%;
+      textarea {
+        width: 100%;
+        height: 110px;
+      }
+    }
+  }
+
+  .visibility {
+    display: flex;
+    gap: 23px;
+  }
+
+  .radioContainer {
+    margin-bottom: 22px;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+  }
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    gap: 33px;
+
+    @media screen and (max-width: 450px) {
+      flex-direction: column-reverse;
+      gap: 16px;
+    }
+
+    .publish {
+      width: 200px;
+    }
+
+    .cancel {
+      cursor: pointer;
+      border: 0;
+      background: 0;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 23px;
+      color: #f9f9fa;
+    }
+  }
+}

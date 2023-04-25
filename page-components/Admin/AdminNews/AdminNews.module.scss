@@ -1,0 +1,17 @@
+.adminNews {
+  display: grid;
+  gap: 26px;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  @media screen and (max-width: 1366px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media screen and (max-width: 1000px) {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    width: 100%;
+  }
+}

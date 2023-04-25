@@ -1,0 +1,13 @@
+.adminCategories {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+
+  width: 100%;
+  list-style: none;
+
+  li {
+    width: 100%;
+  }
+}

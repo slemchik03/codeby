@@ -1,0 +1,21 @@
+.search {
+  background: var(--background-secondary);
+  width: 258px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  border-radius: 8px;
+
+  input {
+    width: 100%;
+    background: none;
+    border: 0;
+    outline: 0;
+    color: var(--gray);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}

@@ -1,0 +1,90 @@
+.newsCard {
+  padding: 20px;
+  border-radius: 12px;
+  height: 100%;
+
+  @media screen and (max-width: 1060px) {
+    min-width: 200px;
+    height: auto;
+  }
+
+  @media screen and (max-width: 950px) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 720px) {
+    max-width: 100%;
+    width: 95%;
+  }
+
+  .badges {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    position: relative;
+
+    .dots {
+      cursor: pointer;
+      position: absolute;
+      right: 0;
+
+      width: 32px;
+      height: 32px;
+    }
+
+    .moreOptions {
+      top: 35px;
+      position: absolute;
+      right: 0px;
+    }
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 18px;
+
+    @media screen and (max-width: 1500px) {
+      font-size: 16px;
+    }
+  }
+
+  ul {
+    margin: 16px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    padding-left: 12px;
+    color: var(--gray);
+    font-weight: 400;
+    font-size: 14px;
+
+    @media screen and (max-width: 1500px) {
+      font-size: 12px;
+    }
+
+    @media screen and (max-width: 1060px) {
+      margin: 10px 0;
+    }
+
+    li {
+      max-width: 310px;
+    }
+  }
+
+  .publish {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 400;
+    font-size: 13px;
+  }
+}
+
+.newsCardBlack {
+  background: var(--background);
+}
+.newsCardGray {
+  background: var(--background-secondary);
+}

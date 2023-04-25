@@ -1,0 +1,12 @@
+.categories {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+
+  list-style: none;
+
+  li {
+    width: 100%;
+  }
+}

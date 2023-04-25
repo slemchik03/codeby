@@ -1,0 +1,178 @@
+.container {
+  background-color: var(--background);
+
+  height: 100vh;
+  min-height: 100vh;
+
+  .sidebar {
+    padding-top: 25px;
+    padding-left: 40px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    height: 100vh;
+    max-height: 100vh;
+    justify-content: space-between;
+
+    @media screen and (max-width: 720px) {
+      align-items: flex-start;
+      padding-left: 26px;
+      .linkContainer {
+        margin-left: 30px;
+      }
+    }
+
+    .logoContainer {
+      display: flex;
+
+      .logo {
+        cursor: pointer;
+
+        svg {
+          width: 150px;
+          height: 40px;
+        }
+
+        .closeIcon {
+          width: 40px;
+          position: absolute;
+          right: 20px;
+          top: 20px;
+        }
+      }
+
+      .miniLogo {
+        margin-left: -30px;
+        cursor: pointer;
+
+        svg {
+          width: 50px;
+          height: 40px;
+        }
+      }
+    }
+
+    .routes {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 26px;
+      width: 100%;
+
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+
+      .activeRouteMobile {
+        background: var(--background-secondary);
+        width: 96%;
+        border-radius: 8px;
+      }
+
+      .mobileSidebarRoute {
+        padding: 14px 30px;
+      }
+
+      li {
+        cursor: pointer;
+        padding: 8px 10px;
+        display: flex;
+        align-items: center;
+
+        position: relative;
+        margin-left: -10px;
+
+        border-radius: 8px;
+
+        a {
+          width: 100%;
+        }
+
+        &:hover {
+          background-color: var(--background-secondary);
+        }
+
+        .activeBorder {
+          margin-top: -5px;
+          position: absolute;
+          right: 0;
+          width: 8px;
+          height: 26px;
+          background-color: var(--green);
+          border-radius: 5px 0px 0px 5px;
+        }
+
+        .activeRouteIcon {
+          svg {
+            stroke: var(--green);
+
+            path {
+              stroke: var(--green);
+            }
+          }
+        }
+      }
+
+      .link {
+        display: flex;
+        align-items: center;
+
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: var(--gray);
+
+        p {
+          margin-top: -3px;
+          margin-left: 22px;
+        }
+      }
+
+      .activeLink {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        color: var(--green);
+      }
+    }
+
+    .mobileRoutes {
+      gap: 5px;
+
+      @media screen and (max-width: 720px) {
+        margin-top: 5%;
+      }
+    }
+
+    .settings {
+      margin-top: 10%;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 26px;
+
+      @media screen and (max-width: 720px) {
+        margin-top: 2%;
+      }
+    }
+
+    .mobileSettings {
+      gap: 5px;
+    }
+
+    .telegram {
+      margin-top: 5%;
+      margin-right: 15px;
+    }
+
+    .mobileButton {
+      display: flex;
+      align-self: center;
+      
+    }
+  }
+}

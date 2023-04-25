@@ -1,0 +1,33 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  width: 150px;
+  min-height: 40px;
+  cursor: pointer;
+  border: 0;
+
+  border-radius: 7px;
+  background-color: var(--green);
+
+  color: #000000;
+  font-size: 15px;
+  line-height: 22px;
+  }
+  
+  .miniButton {
+    width: 50px;
+    height: 50px;
+    background-color: var(--green);
+    border: 0;
+    border-radius: 7px;
+    cursor: pointer;
+  
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  

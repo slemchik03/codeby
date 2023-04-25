@@ -1,0 +1,19 @@
+.mobileMenu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+
+  z-index: 10000;
+
+  .mobileSidebar {
+    background: var(--background);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    li {
+      width: 100%;
+    }
+  }
+}

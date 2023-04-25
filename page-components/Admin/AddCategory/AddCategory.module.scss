@@ -1,0 +1,140 @@
+.addCategory {
+  border-radius: 14px;
+  background-color: var(--background);
+  padding: 20px;
+  margin: 16px 0;
+  width: 100%;
+
+  @media screen and (max-width: 1000px) {
+    padding: 15px;
+  }
+
+  .inputs {
+    width: 100%;
+    margin: 24px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+
+    .uploadContainer {
+      margin-bottom: 30px;
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+
+      @media screen and (max-width: 1000px) {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .uploadWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+      }
+
+      .uploadText {
+        font-weight: 400;
+        font-size: 14px;
+        color: var(--gray);
+      }
+
+      .uploadHere {
+        cursor: pointer;
+        width: 316px;
+        height: 140px;
+        background: var(--background-secondary);
+        border: 1px dashed #6d7d93;
+        border-radius: 7px;
+
+        svg {
+          height: 36px;
+          width: 36px;
+        }
+      }
+
+      .image {
+        border-radius: 7px;
+        object-fit: cover;
+      }
+
+      .updateButton {
+        cursor: pointer;
+        border: 0;
+        background: none;
+        color: var(--green);
+        font-weight: 700;
+        font-size: 14px;
+
+        margin-right: 20px;
+        margin-top: 10px;
+      }
+      .removeButton {
+        cursor: pointer;
+        border: 0;
+        background: none;
+        color: var(--gray);
+        font-weight: 700;
+        font-size: 14px;
+      }
+    }
+
+    .visibility {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 23px;
+    }
+
+    .radioContainer {
+      margin-bottom: 22px;
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    .title {
+      width: 100%;
+      input {
+        width: 50%;
+        @media screen and (max-width: 720px) {
+          width: 100%;
+        }
+      }
+    }
+    .desc {
+      width: 100%;
+      textarea {
+        width: 100%;
+        height: 110px;
+      }
+    }
+  }
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    gap: 33px;
+
+    @media screen and (max-width: 450px) {
+      flex-direction: column-reverse;
+      gap: 16px;
+    }
+
+    .publish {
+      width: 240px;
+    }
+
+    .cancel {
+      cursor: pointer;
+      border: 0;
+      background: 0;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 23px;
+      color: #f9f9fa;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.points {
+  display: flex;
+  align-items: center;
+  margin-top: -20px;
+
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5px;
+  }
+
+  .tags {
+    max-width: 450px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}

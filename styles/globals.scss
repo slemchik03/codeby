@@ -1,0 +1,102 @@
+@font-face {
+  font-family: 'Google Sans';
+  src: local('Google Sans Bold'), local('GoogleSans-Bold'),
+    url('../public/font/GoogleSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Google Sans';
+  src: local('Google Sans Medium'), local('GoogleSans-Medium'),
+    url('../public/font/GoogleSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Google Sans';
+  src: local('Google Sans Regular'), local('GoogleSans-Regular'),
+    url('../public/font/GoogleSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: 'Google Sans', sans-serif;
+  background: var(--background-secondary);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.paginationButtons {
+  width: 80%;
+  height: 40px;
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+
+  a {
+    padding: 10px;
+    margin: 8px;
+    border-radius: 5px;
+    border: 2px solid var(--gray);
+    cursor: pointer;
+
+    @media screen and (max-width: 450px) {
+      padding: 6px;
+      margin: 4px;
+    }
+  }
+}
+
+.activeButton {
+  a {
+    color: var(--background);
+    background: var(--gray);
+  }
+}
+
+.recharts-bar-rectangle {
+  path {
+    &:hover {
+      cursor: pointer;
+      fill: var(--orange);
+    }
+  }
+}
+
+.toolbar {
+  background: var(--background-secondary) !important;
+  border: none !important;
+  color: black !important;
+}
+.editor {
+  background: var(--background-secondary);
+  padding: 0 10px;
+}
+
+:root {
+  --background: #1a1c22;
+  --background-secondary: #282c35;
+
+  --green: #9fef00;
+  --gray: #9e9e9e;
+  --blue: #0086ff;
+  --red: #ff3e3e;
+  --orange: #ffaf00;
+}

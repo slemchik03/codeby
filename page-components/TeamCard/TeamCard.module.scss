@@ -1,0 +1,60 @@
+.teamCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  width: 100%;
+  position: relative;
+  background-color: var(--background-secondary);
+  border-radius: 7px;
+  cursor: pointer;
+  max-height: 83px;
+
+  .left {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    color: #fff;
+
+    .image {
+      border-radius: 50%;
+
+      img {
+        width: 92px;
+        height: 92px;
+        object-fit: cover;
+      }
+    }
+
+    .text {
+      padding-right: 50px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @media screen and (max-width: 720px) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .count {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: #6d7d93;
+      }
+    }
+  }
+
+  svg {
+    position: absolute;
+    right: 20px;
+    top: 42%;
+  }
+}

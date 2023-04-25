@@ -1,0 +1,52 @@
+.safety {
+  .inputs {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'email password' 'newEmail newPassword' 'confirmEmail confirmPassword  ';
+
+    @media screen and (max-width: 1200px) {
+      grid-template-columns: 1fr;
+      grid-template-areas: 'email' 'newEmail' 'newPassword';
+    }
+
+    input {
+      width: 100%;
+    }
+
+    .forgotPassword {
+      font-weight: 400;
+      font-size: 14px;
+      color: #6d7d93;
+
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      margin-top: 9px;
+
+      span {
+        cursor: pointer;
+        color: var(--green);
+      }
+    }
+
+    .email {
+      grid-area: email;
+    }
+    .password {
+      grid-area: password;
+    }
+    .newEmail {
+      grid-area: newEmail;
+    }
+    .newPassword {
+      grid-area: newPassword;
+    }
+    //.confirmEmail {
+    //  grid-area: confirmEmail;
+    //}
+    //.confirmPassword {
+    //  grid-area: confirmPassword;
+    //}
+  }
+}

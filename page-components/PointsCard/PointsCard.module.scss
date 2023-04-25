@@ -1,0 +1,27 @@
+.pointsCard {
+  border-radius: 14px;
+  background-color: var(--background-secondary);
+
+  padding-top: 16px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+
+  max-height: 98px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+
+  .title {
+    margin-top: -5px;
+    color: var(--gray);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .value {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 57px;
+  }
+}

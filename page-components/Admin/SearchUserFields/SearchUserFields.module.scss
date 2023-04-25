@@ -1,0 +1,16 @@
+.searchUserContainer {
+    display: grid;
+    max-width: 400px;
+    gap: 20px;
+
+    .inputs {
+        display: grid;
+        grid-auto-flow: column;
+        gap: 10px;
+
+        @media (max-width: 795px) {
+            grid-auto-flow: row;
+            gap: 20px;
+        }
+    }
+}

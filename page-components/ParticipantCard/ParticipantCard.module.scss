@@ -1,0 +1,65 @@
+.participantCard {
+  display: flex;
+  align-items: center;
+  height: 52px;
+  width: 100%;
+  position: relative;
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    width: 100%;
+
+    margin-right: 100px;
+
+    .image {
+      border-radius: 50%;
+
+      img {
+        width: 92px;
+        height: 92px;
+        object-fit: cover;
+      }
+    }
+
+    .text {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      .nickname {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 24px;
+      }
+      .email {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 12px;
+        color: var(--gray);
+      }
+    }
+
+    .role {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      color: #fff;
+
+      @media screen and (max-width: 500px) {
+        display: none;
+      }
+    }
+  }
+
+  svg {
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+  }
+}

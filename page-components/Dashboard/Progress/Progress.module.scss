@@ -1,0 +1,70 @@
+.progress {
+  background-color: var(--background);
+
+  .top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    .image {
+      border-radius: 50%;
+
+      img {
+        width: 92px;
+        height: 92px;
+        object-fit: cover;
+      }
+    }
+
+    .info {
+      span {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 31px;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #6d7d93;
+      }
+    }
+  }
+
+  .data {
+    margin-top: 34px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    svg {
+      width: 42px;
+      height: 42px;
+    }
+
+    .item {
+      display: flex;
+      align-items: center;
+      gap: 17px;
+
+      .itemData {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 12px;
+
+        div {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          span {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 15px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.notifications {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+
+  .notification {
+    border-radius: 14px;
+    width: 100%;
+    padding: 8px 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--background);
+    height: 56px;
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

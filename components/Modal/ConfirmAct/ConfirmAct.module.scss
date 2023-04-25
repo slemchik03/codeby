@@ -1,0 +1,14 @@
+.buttons {
+  display: flex;
+  justify-content: right;
+  gap: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  button {
+    padding: 0 5px;
+  }
+}
+.confirmActWrapper {
+  display: grid;
+  grid-template-columns: minmax(0, 400px);
+}

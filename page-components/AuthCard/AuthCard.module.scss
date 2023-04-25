@@ -1,0 +1,109 @@
+.authContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.authCard {
+  padding: 45px 52px;
+  background-color: var(--background);
+  border-radius: 14px;
+  z-index: 10;
+  width: 453px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 500px) {
+    width: 95%;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .title {
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  .desc {
+    text-align: center;
+    margin-top: 22px;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--gray);
+    max-width: 223px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    span {
+      color: var(--gray);
+    }
+  }
+
+  .telegram {
+    width: 75px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    border: 1px solid rgba(109, 125, 147, 0.15);
+    margin-top: 22px;
+    transition: background-color 300ms;
+    cursor: pointer;
+
+    background-color: #229ed9;
+
+    svg {
+      width: 26px;
+      height: 22px;
+    }
+  }
+
+  .telegram:hover {
+    background-color: #1d86b8;
+  }
+
+  .telegram:hover {
+    background-color: rgba(109, 125, 147, 0.15);
+  }
+
+  .or {
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--gray);
+    margin-top: 22px;
+  }
+
+  .inputs {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  input {
+    min-width: 350px;
+
+    @media screen and (max-width: 500px) {
+      min-width: 300px;
+    }
+  }
+
+  button {
+    margin-top: 30px;
+  }
+
+  p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--gray);
+    span {
+      cursor: pointer;
+      color: var(--green);
+    }
+  }
+}

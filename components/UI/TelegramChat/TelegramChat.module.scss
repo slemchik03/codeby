@@ -1,0 +1,47 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  width: 150px;
+  min-height: 40px;
+  cursor: pointer;
+  border: 0;
+
+  border-radius: 7px;
+  background-color: var(--blue);
+
+  color: #fff;
+  font-size: 15px;
+  line-height: 22px;
+
+  &:hover {
+    background-color: rgb(34, 104, 235);
+  }
+}
+
+.miniButton {
+  width: 50px;
+  height: 50px;
+  background-color: var(--blue);
+  border: 0;
+  border-radius: 7px;
+  cursor: pointer;
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+.buttonContainerMini {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}

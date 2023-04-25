@@ -1,0 +1,15 @@
+.adminTasks {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 26px;
+
+  .card {
+    max-width: 357px;
+
+    @media screen and (max-width: 1100px) {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+}

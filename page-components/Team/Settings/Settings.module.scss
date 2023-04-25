@@ -1,0 +1,85 @@
+.editContainer {
+  background-color: #1a1c22;
+  padding: 20px;
+  border-radius: 5px;
+}
+.edit {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  .loadImgBtn {
+    cursor: pointer;
+    transition: 0.1s all ease-in-out;
+    &:hover {
+      color: #9fef00;
+      transition: 0.2s all ease-in-out;
+    }
+  }
+  svg {
+    width: 90px;
+    height: 90px;
+  }
+
+  div {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    gap: 26px;
+  }
+}
+
+.inputs {
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+
+  grid-template-areas:
+    'name password'
+    'description description';
+
+  input {
+    width: 100%;
+  }
+
+  .name {
+    grid-area: name;
+  }
+  .description {
+    grid-area: description;
+    textarea {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .password {
+    grid-area: password;
+  }
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 33px;
+
+  @media screen and (max-width: 500px) {
+    flex-direction: column-reverse;
+    gap: 22px;
+  }
+
+  .save {
+    width: 260px;
+  }
+
+  .delete {
+    cursor: pointer;
+    color: var(--red);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    border: 0;
+    outline: 0;
+    background: none;
+  }
+}

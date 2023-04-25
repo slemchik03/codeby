@@ -1,0 +1,42 @@
+.profile {
+  display: grid;
+  gap: 26px;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr 1fr;
+  grid-template-areas:
+    'progress info info'
+    'complete points points'
+    'complete activity activity';
+
+  @media screen and (max-width: 1366px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 'progress info' 'complete points' 'activity activity';
+  }
+
+  @media screen and (max-width: 1110px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 'progress' 'info' 'complete' 'points' 'activity';
+  }
+
+  .progress {
+    grid-area: progress;
+  }
+  .info {
+    grid-area: info;
+  }
+  .complete {
+    grid-area: complete;
+  }
+  .noComplete {
+    height: 318px;
+  }
+  .points {
+    grid-area: points;
+  }
+  .activity {
+    grid-area: activity;
+  }
+}

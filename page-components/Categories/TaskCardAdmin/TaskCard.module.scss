@@ -1,0 +1,86 @@
+.taskCard {
+  background-color: var(--background);
+  border-radius: 14px;
+
+  padding: 20px;
+
+  .top {
+    margin-bottom: 22px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    position: relative;
+
+    img {
+      width: 55px;
+      height: 55px;
+      object-fit: cover;
+      border-radius: 7px;
+    }
+
+    .moreOptions {
+      position: absolute;
+      top: 50px;
+      right: 0;
+    }
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  .desc {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--gray);
+    max-width: 320px;
+  }
+
+  .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 22px;
+
+    button {
+      cursor: pointer;
+      border-radius: 8px;
+      border: 0;
+      background-color: var(--background-secondary);
+      font-weight: 500;
+      font-size: 12px;
+      color: #6d7d93;
+      width: 112px;
+      height: 36px;
+    }
+  }
+
+  .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 22px;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      p {
+        font-weight: 700;
+        font-size: 14px;
+        color: var(--gray);
+      }
+
+      span {
+        text-align: end;
+        font-weight: 500;
+        font-size: 14px;
+        color: var(--green);
+      }
+    }
+  }
+}

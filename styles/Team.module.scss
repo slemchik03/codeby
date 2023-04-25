@@ -1,0 +1,104 @@
+.team {
+  .mobileToolbar {
+    display: none;
+    height: 75px;
+    position: relative;
+
+    div {
+      p {
+        color: var(--green);
+        padding-bottom: 6px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-bottom: 2px solid var(--green);
+      }
+    }
+
+    @media screen and (max-width: 950px) {
+      display: block;
+    }
+
+    .mobileButtons {
+      position: absolute;
+      right: 12%;
+      top: 6px;
+
+      display: flex;
+      align-items: center;
+      gap: 7px;
+
+      @media screen and (max-width: 400px) {
+        right: 15%;
+      }
+
+      .invite {
+        margin-top: 3px;
+        font-weight: 500;
+        z-index: 5000;
+        width: 110px;
+        height: 35px;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .toolbar {
+    padding: 20px 30px;
+    border-radius: 14px;
+    background-color: var(--background);
+    margin-bottom: 22px;
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .buttons {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+
+      .invite {
+        width: 200px;
+        height: 42px;
+      }
+    }
+
+    @media screen and (max-width: 950px) {
+      display: none;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 26px;
+
+      @media screen and (max-width: 1366px) {
+        gap: 12px;
+      }
+
+      li {
+        white-space: nowrap;
+        cursor: pointer;
+        padding: 0 14px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 23px;
+
+        padding-bottom: 10px;
+
+        @media screen and (max-width: 1366px) {
+          padding: 0 5px;
+          padding-bottom: 10px;
+          font-size: 14px;
+        }
+      }
+
+      .active {
+        color: var(--green);
+        border-bottom: 2px solid var(--green);
+      }
+    }
+  }
+}

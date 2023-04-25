@@ -1,0 +1,109 @@
+.settings {
+  padding: 20px;
+  background-color: var(--background);
+  border-radius: 14px;
+
+  .links {
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 720px) {
+      display: none;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 36px;
+
+      @media screen and (max-width: 930px) {
+        gap: 14px;
+      }
+
+      li {
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 23px;
+        color: var(--gray);
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 10px;
+
+        @media screen and (max-width: 930px) {
+          font-size: 14px;
+          white-space: nowrap;
+
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
+
+      .active {
+        color: var(--green);
+        position: relative;
+
+        border-bottom: 2px solid var(--green);
+      }
+    }
+  }
+
+  .mobileLinks {
+    display: none;
+
+    @media screen and (max-width: 720px) {
+      display: block;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 22px;
+
+      li {
+        cursor: pointer;
+        width: 100%;
+        padding: 18px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+
+        background-color: var(--background-secondary);
+        border-radius: 14px;
+      }
+    }
+  }
+
+  .buttons {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 33px;
+
+    @media screen and (max-width: 500px) {
+      flex-direction: column-reverse;
+      gap: 22px;
+    }
+
+    .save {
+      width: 260px;
+    }
+
+    .delete {
+      cursor: pointer;
+      color: var(--red);
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 23px;
+      border: 0;
+      outline: 0;
+      background: none;
+    }
+  }
+}
